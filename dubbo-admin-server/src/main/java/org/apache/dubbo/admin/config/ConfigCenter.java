@@ -98,7 +98,8 @@ public class ConfigCenter {
                         String registryAddress = s.split("=")[1].trim();
                         registryUrl = formUrl(registryAddress, configCenterGroup, username, password);
                     } else if (s.startsWith(Constants.METADATA_ADDRESS)) {
-                        metadataUrl = formUrl(s.split("=")[1].trim(), configCenterGroup, username, password);
+                        //metadataUrl = formUrl(s.split("=")[1].trim(), configCenterGroup, username, password);
+                        metadataUrl = formUrl(s.split("=")[1].trim(), metadataGroup, username, password);
                     }
                 });
             }
